@@ -5,6 +5,7 @@ from SavingsAccount import Savings
 def main():
     # Scenario
     checking = BankAccount("Alice", 500, 100, "CHECK001")
+    checking2 = Checking("Leo", 800, 150, "CHECK002", 100)
     checking.print_customer_information()
 
     # Deposit $300 into checking
@@ -20,6 +21,7 @@ def main():
     print(checking.current_balance)
 
     savings = Savings("Alice", 1000, 200, "SAVING001", 0.05)
+    savings2 = Savings("Leo", 1500, 300, "SAVING002", 0.05)
     savings.print_customer_information()
 
     # Deposit $500 into savings
@@ -33,6 +35,21 @@ def main():
     # Withdraw $300 from savings
     savings.withdraw(300)
     print(savings.current_balance)
+
+    # Print second checking
+    checking2.print_customer_information()
+
+    # Deposit $500
+    checking2.deposit(500)
+    print(checking2.current_balance)
+
+    # Transfer $50
+    checking2.transfer(50)
+    print(checking2.current_balance)
+
+    savings2.print_customer_information()
+    savings2.deposit(500)
+    print(savings2.current_balance)
 
 
 if __name__ == "__main__":
