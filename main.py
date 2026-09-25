@@ -5,8 +5,8 @@ from CheckingAccount import Checking
 
 def main():
     # Scenario
-    checking = BankAccount("Juice", 500, 100, "CHECK001")
-    checking2 = Checking("Leo", 800, 150, "CHECK002", 100)
+    checking = BankAccount("Juice", 500, 100, "CHECK001", "111000111")
+    checking2 = Checking("Leo", 800, 150, "CHECK002", "111000111", 100)
     checking.print_customer_information()
 
     # Deposit $300 into checking
@@ -21,8 +21,8 @@ def main():
     checking.withdraw(5000)
     print(checking.current_balance)
 
-    savings = Savings("Juice", 1000, 200, "SAVING001", 0.05)
-    savings2 = Savings("Leo", 1500, 300, "SAVING002", 0.05)
+    savings = Savings("Juice", 1000, 200, "SAVING001", "111000111", 0.05)
+    savings2 = Savings("Leo", 1500, 300, "SAVING002", "111000111", 0.05)
     savings.print_customer_information()
 
     # Deposit $500 into savings
