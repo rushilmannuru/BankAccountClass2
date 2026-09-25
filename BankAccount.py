@@ -1,7 +1,7 @@
 class BankAccount:
     bank_title = "Nik and Rushil's Royal Bank"
 
-    def __init__(self, customer_name, current_balance, minimum_balance, account_number):
+    def __init__(self, customer_name, current_balance, minimum_balance, account_number, routing_number):
         self.customer_name = customer_name
         self.current_balance = current_balance
         self.minimum_balance = minimum_balance
