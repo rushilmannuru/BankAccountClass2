@@ -22,8 +22,8 @@ class BankAccount:
         self.current_balance -= amount
 
     def print_customer_information(self):
-        print(self.bank_title)
-        print(self.customer_name)
-        print(self.__account_number)
-        print(self.current_balance)
-        print(self.minimum_balance)
+        print("Bank: "+BankAccount.bank_title)
+        print("Customer Name: " + self.customer_name)
+        print(f"Account Number: {self.__account_number}")
+        print(f"Current Balance: {self.current_balance}")
+        print(f"Minimum Balance: {self.minimum_balance}")

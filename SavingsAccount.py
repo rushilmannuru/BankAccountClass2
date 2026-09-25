@@ -10,4 +10,4 @@ class Savings(BankAccount):
 
     def print_customer_information(self):
         super().print_customer_information()
-        print(self.interest_rate)
+        print(f"Interest Rate: {self.interest_rate}")
