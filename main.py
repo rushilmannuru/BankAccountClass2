@@ -1,5 +1,6 @@
 from BankAccount import BankAccount
 from SavingsAccount import Savings
+from CheckingAccount import Checking
 
 
 def main():
